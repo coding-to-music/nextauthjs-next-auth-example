@@ -57,6 +57,20 @@ https://isotropic.co/add-a-favicon-to-next-js/
 
 https://realfavicongenerator.net/
 
+### Put the Favicon files into /public
+
+```java
+cd public
+
+wget https://realfavicongenerator.net/files/06fedf85d90178d64bdd26e7430b8eca9b181363/favicon_package_v0.16.zip
+
+unzip favicon_package_v0.16.zip
+
+rm *.zip
+```
+
+### Create the Favicon component
+
 ```java
 // /components/Favicon.tsx
 import Head from "next/head";
