@@ -1,3 +1,74 @@
+# nextauthjs-next-auth-example
+
+# 🚀 This is an example application that shows how next-auth is applied to a basic Next.js app. Auth methods include GitHub, Facebook, Twitter, Google, Auth0 🚀
+
+https://github.com/coding-to-music/nextauthjs-next-auth-example
+
+https://nextauthjs-next-auth-example.vercel.app
+
+From / By https://github.com/nextauthjs/next-auth-example
+
+https://next-auth-example.vercel.app/
+
+<!-- <div style="text-align:center;">
+  <img src="/images/chakra.jpg" alt="Image" />
+  <p><em>Chakra Component Library with Next.js</em></p>
+</div> -->
+
+## Node Environment:
+
+```java
+nvm use 18
+```
+
+## Environment variables:
+
+see `.env.local.example`
+
+```java
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET= # Linux: `openssl rand -hex 32` or go to https://generate-secret.now.sh/32
+
+
+AUTH0_ID=
+AUTH0_SECRET=
+AUTH0_ISSUER=
+
+DESCOPE_ID=
+DESCOPE_SECRET=
+
+FACEBOOK_ID=
+FACEBOOK_SECRET=
+
+GITHUB_ID=
+GITHUB_SECRET=
+
+GOOGLE_ID=
+GOOGLE_SECRET=
+
+TWITTER_ID=
+TWITTER_SECRET=
+```
+
+## GitHub
+
+```java
+git init
+git add .
+git remote remove origin
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:coding-to-music/nextauthjs-next-auth-example.git
+git push -u origin main
+```
+
+<p align="center">
+  <a href="https://nextjs-postgres-auth.vercel.app/">
+    <img src="/public/logo.png" height="96">
+    <h3 align="center">Next.js Prisma PostgreSQL Auth Starter</h3>
+  </a>
+</p>
+
 > The example repository is maintained from a [monorepo](https://github.com/nextauthjs/next-auth/tree/main/apps/examples/nextjs). Pull Requests should be opened against [`nextauthjs/next-auth`](https://github.com/nextauthjs/next-auth).
 
 <p align="center">
