@@ -51,6 +51,69 @@ TWITTER_SECRET=
 
 ```
 
+## Add a favicon.ico
+
+https://isotropic.co/add-a-favicon-to-next-js/
+
+https://realfavicongenerator.net/
+
+```java
+// /components/Favicon.tsx
+import Head from "next/head";
+
+function Favicon(): JSX.Element {
+  return (
+    <Head>
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
+      <link rel="manifest" href="/site.webmanifest" />
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+      <meta name="msapplication-TileColor" content="#da532c" />
+      <meta name="theme-color" content="#ffffff" />
+    </Head>
+  );
+}
+
+export default Favicon;
+```
+
+### Include the Favicon in
+
+```java
+// /pages/index.tsx
+
+import Layout from "../components/layout";
+import Favicon from "../components/Favicon"; // Import the Favicon component
+
+export default function IndexPage() {
+  return (
+    <Layout>
+      <Favicon />
+      <h1>NextAuth.js Example</h1>
+      <p>
+        This is an example site to demonstrate how to use{" "}
+        <a href="https://next-auth.js.org">NextAuth.js</a> for authentication.
+      </p>
+    </Layout>
+  );
+}
+```
+
 ## GitHub
 
 ```java

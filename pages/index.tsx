@@ -1,3 +1,5 @@
+// /pages/index.tsx
+
 import Layout from "../components/layout";
 import Favicon from "../components/Favicon"; // Import the Favicon component
 

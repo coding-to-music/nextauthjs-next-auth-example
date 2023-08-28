@@ -1,7 +1,7 @@
 // /components/Favicon.tsx
 import Head from "next/head";
 
-const Favicon = (): JSX.Element => {
+function Favicon(): JSX.Element {
   return (
     <Head>
       <link
@@ -27,6 +27,6 @@ const Favicon = (): JSX.Element => {
       <meta name="theme-color" content="#ffffff" />
     </Head>
   );
-};
+}
 
 export default Favicon;
