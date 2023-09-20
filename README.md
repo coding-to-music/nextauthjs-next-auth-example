@@ -51,6 +51,56 @@ TWITTER_SECRET=
 
 ```
 
+## Routes visited
+
+```java
+/
+/admin
+/api-example
+/client
+/me
+/protected
+/server
+```
+
+## API Route Example
+
+The examples below show responses from the example API endpoints.
+
+You must be signed in to see responses.
+
+Session
+
+/api/examples/session
+
+```json
+{
+  "user": {
+    "name": "Tom Connors",
+    "email": "connors.tom@gmail.com",
+    "image": "https://avatars.githubusercontent.com/u/3156358?v=4"
+  },
+  "expires": "2023-10-20T22:18:35.927Z"
+}
+```
+
+JSON Web Token
+
+/api/examples/jwt
+
+```json
+{
+  "name": "Tom Connors",
+  "email": "connors.tom@gmail.com",
+  "picture": "https://avatars.githubusercontent.com/u/3156358?v=4",
+  "sub": "3156358",
+  "userRole": "admin",
+  "iat": 1695248295,
+  "exp": 1697840295,
+  "jti": "399f6574-3326-4c57-a755-2757542065a0"
+}
+```
+
 ## Add a favicon.ico
 
 https://isotropic.co/add-a-favicon-to-next-js/
